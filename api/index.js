@@ -8,10 +8,10 @@ app.use(express.json());
 
 router.get("/", (req, res) => {
   res.send({
-    message: "response From Server...",
+    message: "Welcome to testing API Server...",
     method: req.method,
-    url: req.url,
-    goTo: "http://localhost:3010/api/users",
+    currentUrl: req.url,
+    data: "https://response-api-nine.vercel.app/users",
   });
 });
 
